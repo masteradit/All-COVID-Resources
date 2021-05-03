@@ -1,16 +1,16 @@
-# all_covid_resources
+# All COVID Resources
+
+Website - https://all-covid-resources.web.app/
 
 A collection of all COVID related resources and websites.
 
-## Getting Started
+Recently, a lot of new resources and websites and resources have emerged. The purpose of this website is to compile all the resources at one place so that it is easier for people to find them.
 
-This project is a starting point for a Flutter application.
+## FAQs
 
-A few resources to get you started if this is your first Flutter project:
+#### Q. How do I contribute?
+A. If you know a resource/website that we have not added, please [create an issue on Github](https://github.com/masteradit/All-COVID-Resources/issues) or [contact us](mailto:adit.luhadia@allmityapp.com).
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+#### Q. I found a bug in the website. Where can I report it?
+A. Please [create an issue on Github](https://github.com/masteradit/All-COVID-Resources/issues) and include screenshots and/or explaination of the bug and how to replicate it.
