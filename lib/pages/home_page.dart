@@ -1,5 +1,7 @@
-import 'package:all_covid_resources/widgets/resource_card.dart';
 import 'package:flutter/material.dart';
+
+import '../config/resources_list.dart';
+import '../widgets/resource_card.dart';
 
 class HomePage extends StatelessWidget {
   @override
@@ -22,8 +24,10 @@ class HomePage extends StatelessWidget {
       ),
       body: ListView.builder(
         padding: EdgeInsets.all(MediaQuery.of(context).size.width * 0.05),
-        itemCount: 5,
-        itemBuilder: (context, index) => ResourceCard(),
+        itemCount: resourceList.length,
+        itemBuilder: (context, index) => ResourceCard(
+          resource: resourceList[index],
+        ),
       ),
     );
   }
