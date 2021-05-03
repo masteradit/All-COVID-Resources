@@ -14,4 +14,10 @@ final List<Resource> resourceList = [
     iconUrl: 'plasmadonation.sociio.org.jpg',
     websiteUrl: 'https://plasmadonation.sociio.org/',
   ),
+  Resource(
+    name: 'COVID19-Twitter',
+    description: 'Twitter Search for COVID',
+    iconUrl: '',
+    websiteUrl: 'https://covid19-twitter.in/',
+  ),
 ];
