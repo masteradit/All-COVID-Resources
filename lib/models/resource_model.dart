@@ -1,13 +1,13 @@
 class Resource {
   String name;
   String description;
-  String iconUrl;
+  String? logoPath;
   String websiteUrl;
 
   Resource({
     required this.name,
     required this.description,
-    required this.iconUrl,
+    this.logoPath,
     required this.websiteUrl,
   });
 }

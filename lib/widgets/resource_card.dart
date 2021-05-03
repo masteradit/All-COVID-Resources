@@ -20,7 +20,9 @@ class ResourceCard extends StatelessWidget {
         child: ListTile(
           onTap: followLink,
           leading: CircleAvatar(
-            child: Image.asset('assets/logos/${resource.iconUrl}'),
+            child: resource.logoPath != null
+                ? Image.asset(resource.logoPath as String)
+                : null,
           ),
           title: Text(resource.name),
           subtitle: Text(resource.description),
