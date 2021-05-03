@@ -19,4 +19,9 @@ final List<Resource> resourceList = [
     description: 'Twitter Search for COVID',
     websiteUrl: 'https://covid19-twitter.in/',
   ),
+  Resource(
+    name: 'COVIDFacts',
+    description: 'Crowdsourcing of data',
+    websiteUrl: 'https://covidfacts.in/',
+  ),
 ];
