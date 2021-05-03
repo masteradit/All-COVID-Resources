@@ -19,9 +19,9 @@ class HomePage extends StatelessWidget {
         ),
         centerTitle: true,
       ),
-      drawer: Drawer(
-        child: ListView(),
-      ),
+      // drawer: Drawer(
+      //   child: ListView(),
+      // ),
       body: ListView.builder(
         padding: EdgeInsets.all(MediaQuery.of(context).size.width * 0.05),
         itemCount: resourceList.length,
