@@ -13,11 +13,11 @@ class ResourceCard extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Link(
-      uri: Uri.parse(resource.websiteUrl),
-      target: LinkTarget.blank,
-      builder: (context, followLink) => Card(
-        child: ListTile(
+    return Card(
+      child: Link(
+        uri: Uri.parse(resource.websiteUrl),
+        target: LinkTarget.blank,
+        builder: (context, followLink) => ListTile(
           onTap: followLink,
           leading: CircleAvatar(
             child: resource.logoPath != null
