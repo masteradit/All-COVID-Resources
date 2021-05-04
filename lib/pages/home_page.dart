@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import '../config/resources_list.dart';
+import '../widgets/custom_drawer.dart';
 import '../widgets/resource_card.dart';
 
 class HomePage extends StatelessWidget {
@@ -19,9 +20,7 @@ class HomePage extends StatelessWidget {
         ),
         centerTitle: true,
       ),
-      // drawer: Drawer(
-      //   child: ListView(),
-      // ),
+      drawer: CustomDrawer(),
       body: ListView.builder(
         padding: EdgeInsets.all(MediaQuery.of(context).size.width * 0.05),
         itemCount: resourceList.length,
