@@ -20,8 +20,8 @@ class ResourceCard extends StatelessWidget {
         builder: (context, followLink) => ListTile(
           onTap: followLink,
           leading: CircleAvatar(
-            child: resource.logoPath != null
-                ? Image.asset(resource.logoPath as String)
+            backgroundImage: resource.logoUrl != null
+                ? NetworkImage(resource.logoUrl as String)
                 : null,
           ),
           title: Text(resource.name),
