@@ -14,14 +14,14 @@ class Resource {
   factory Resource.fromJson(Map<String, dynamic> json) => Resource(
         name: json["name"],
         description: json["description"],
-        logoUrl: json["logoPath"],
+        logoUrl: json["logoUrl"],
         websiteUrl: json["websiteUrl"],
       );
 
   Map<String, dynamic> toJson() => {
         "name": name,
         "description": description,
-        "logoPath": logoUrl,
+        "logoUrl": logoUrl,
         "websiteUrl": websiteUrl,
       };
 }
