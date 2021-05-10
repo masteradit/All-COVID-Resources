@@ -51,6 +51,16 @@ class CustomDrawer extends StatelessWidget {
               title: Text('Contact us'),
             ),
           ),
+          Divider(),
+          ListTile(
+            title: Text(
+              'v1.0.0+1',
+              textAlign: TextAlign.center,
+              style: TextStyle(
+                color: Colors.grey,
+              ),
+            ),
+          ),
         ],
       ),
     );
