@@ -54,7 +54,7 @@ class CustomDrawer extends StatelessWidget {
           Divider(),
           ListTile(
             title: Text(
-              'v1.0.0+1',
+              'v1.0.1+2',
               textAlign: TextAlign.center,
               style: TextStyle(
                 color: Colors.grey,
