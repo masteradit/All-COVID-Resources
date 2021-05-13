@@ -18,7 +18,6 @@ class LoadingPage extends StatelessWidget {
         ),
         centerTitle: true,
       ),
-      drawer: CustomDrawer(),
       body: Center(
         child: CircularProgressIndicator(),
       ),
