@@ -16,6 +16,11 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.orange,
         primaryColor: kIndianSaffronColor,
       ),
+      darkTheme: ThemeData(
+        brightness: Brightness.dark,
+        primarySwatch: Colors.orange,
+        primaryColor: kIndianSaffronColor,
+      ),
       home: InitialPage(),
     );
   }
