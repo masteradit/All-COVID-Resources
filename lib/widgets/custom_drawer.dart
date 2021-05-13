@@ -33,6 +33,21 @@ class CustomDrawer extends StatelessWidget {
               ),
             ),
           ),
+          AboutListTile(
+            icon: Icon(Icons.info),
+            applicationIcon: Image.asset(
+              'assets/favicon.png',
+              height: 50.0,
+            ),
+            applicationName: 'All COVID Resources',
+            applicationVersion: 'v1.0.1+2',
+            aboutBoxChildren: [
+              Text(
+                  'All COVID Resources is a list of resources related to COVID for India.'),
+              SizedBox(height: 20.0),
+              Text('Powered by Allmity.'),
+            ],
+          ),
           Link(
             uri: Uri.parse('https://github.com/masteradit/All-COVID-Resources'),
             target: LinkTarget.blank,
