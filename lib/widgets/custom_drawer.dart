@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:url_launcher/link.dart';
 
+import '../pages/admin_portal_page.dart';
+
 class CustomDrawer extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
@@ -65,6 +67,16 @@ class CustomDrawer extends StatelessWidget {
               leading: Icon(Icons.email),
               title: Text('Contact us'),
             ),
+          ),
+          Divider(),
+          ListTile(
+            onTap: () {
+              Navigator.of(context).push(MaterialPageRoute(
+                builder: (context) => AdminPortalPage(),
+              ));
+            },
+            leading: Icon(Icons.lock),
+            title: Text('Admin Portal'),
           ),
           Divider(),
           ListTile(
