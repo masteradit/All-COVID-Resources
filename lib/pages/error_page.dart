@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
 
-import '../widgets/custom_drawer.dart';
-
 class ErrorPage extends StatelessWidget {
   final String? error;
 
@@ -25,15 +23,20 @@ class ErrorPage extends StatelessWidget {
         ),
         centerTitle: true,
       ),
-      drawer: CustomDrawer(),
       body: Center(
         child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
           children: [
             Text(
               'Oops! We encountered an error!',
               textAlign: TextAlign.center,
             ),
-            error != null ? Text('Details: $error') : Container(),
+            error != null
+                ? Text(
+                    'Details: $error',
+                    textAlign: TextAlign.center,
+                  )
+                : Container(),
           ],
         ),
       ),
