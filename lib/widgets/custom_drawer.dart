@@ -42,7 +42,7 @@ class CustomDrawer extends StatelessWidget {
               height: 50.0,
             ),
             applicationName: 'All COVID Resources',
-            applicationVersion: 'v1.2.0+4',
+            applicationVersion: 'v1.2.1+5',
             aboutBoxChildren: [
               Text(
                   'All COVID Resources is a list of resources related to COVID for India.'),
@@ -81,7 +81,7 @@ class CustomDrawer extends StatelessWidget {
           Divider(),
           ListTile(
             title: Text(
-              'v1.2.0+4',
+              'v1.2.1+5',
               textAlign: TextAlign.center,
               style: TextStyle(
                 color: Colors.grey,
