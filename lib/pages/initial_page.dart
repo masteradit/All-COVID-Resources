@@ -6,6 +6,8 @@ import 'home_page.dart';
 import 'loading_page.dart';
 
 class InitialPage extends StatelessWidget {
+  static const String routeName = '/';
+
   @override
   Widget build(BuildContext context) {
     return FutureBuilder(

@@ -8,6 +8,8 @@ import 'loading_page.dart';
 import 'login_page.dart';
 
 class AddResourcePage extends StatelessWidget {
+  static const String routeName = '/add-resource';
+
   final _formKey = GlobalKey<FormState>();
 
   @override

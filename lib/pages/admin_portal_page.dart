@@ -7,6 +7,8 @@ import 'loading_page.dart';
 import 'login_page.dart';
 
 class AdminPortalPage extends StatelessWidget {
+  static const String routeName = '/admin-portal';
+
   @override
   Widget build(BuildContext context) {
     return StreamBuilder<User?>(
@@ -42,9 +44,7 @@ class AdminPortalPage extends StatelessWidget {
             children: [
               ListTile(
                 onTap: () {
-                  Navigator.of(context).push(MaterialPageRoute(
-                    builder: (context) => AddResourcePage(),
-                  ));
+                  Navigator.of(context).pushNamed(AddResourcePage.routeName);
                 },
                 leading: Icon(Icons.add_circle),
                 title: Text('Add a resource'),

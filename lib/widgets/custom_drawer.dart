@@ -71,9 +71,7 @@ class CustomDrawer extends StatelessWidget {
           Divider(),
           ListTile(
             onTap: () {
-              Navigator.of(context).push(MaterialPageRoute(
-                builder: (context) => AdminPortalPage(),
-              ));
+              Navigator.of(context).pushNamed(AdminPortalPage.routeName);
             },
             leading: Icon(Icons.lock),
             title: Text('Admin Portal'),
