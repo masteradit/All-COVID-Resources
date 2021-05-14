@@ -38,6 +38,7 @@ class AdminPortalPage extends StatelessWidget {
             centerTitle: true,
           ),
           body: ListView(
+            padding: EdgeInsets.all(MediaQuery.of(context).size.width * 0.05),
             children: [
               ListTile(
                 onTap: () {

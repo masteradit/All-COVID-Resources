@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
 
-import '../widgets/custom_drawer.dart';
-
 class LoadingPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {

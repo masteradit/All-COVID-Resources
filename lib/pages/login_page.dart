@@ -11,6 +11,9 @@ class LoginPage extends StatelessWidget {
 
     return Scaffold(
       appBar: AppBar(
+        iconTheme: IconThemeData(
+          color: Colors.white,
+        ),
         title: Text(
           'Login',
           style: TextStyle(
@@ -25,6 +28,7 @@ class LoginPage extends StatelessWidget {
           padding: EdgeInsets.all(MediaQuery.of(context).size.width * 0.2),
           children: [
             TextFormField(
+              keyboardType: TextInputType.emailAddress,
               onChanged: (value) {
                 _email = value;
               },
@@ -66,7 +70,12 @@ class LoginPage extends StatelessWidget {
                   );
                 }
               },
-              child: Text('SUBMIT'),
+              child: Text(
+                'SUBMIT',
+                style: TextStyle(
+                  color: Colors.white,
+                ),
+              ),
             ),
           ],
         ),

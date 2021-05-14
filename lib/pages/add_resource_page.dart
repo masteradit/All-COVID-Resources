@@ -110,6 +110,10 @@ class AddResourcePage extends StatelessWidget {
                 ElevatedButton(
                   onPressed: () async {
                     if (_formKey.currentState!.validate()) {
+                      if (_logoUrl == '') {
+                        _logoUrl = null;
+                      }
+
                       await FirebaseFirestore.instance
                           .collection('resources')
                           .add(Resource(
@@ -120,7 +124,12 @@ class AddResourcePage extends StatelessWidget {
                           ).toJson());
                     }
                   },
-                  child: Text('SUBMIT'),
+                  child: Text(
+                    'SUBMIT',
+                    style: TextStyle(
+                      color: Colors.white,
+                    ),
+                  ),
                 ),
               ],
             ),
