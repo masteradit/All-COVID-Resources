@@ -1,3 +1,5 @@
+import 'package:firebase_analytics/firebase_analytics.dart';
+import 'package:firebase_analytics/observer.dart';
 import 'package:flutter/material.dart';
 import 'package:url_strategy/url_strategy.dart';
 
@@ -39,6 +41,9 @@ class MyApp extends StatelessWidget {
         LoadingPage.routeName: (_) => LoadingPage(),
         LoginPage.routeName: (_) => LoginPage(),
       },
+      navigatorObservers: [
+        FirebaseAnalyticsObserver(analytics: FirebaseAnalytics()),
+      ],
     );
   }
 }
